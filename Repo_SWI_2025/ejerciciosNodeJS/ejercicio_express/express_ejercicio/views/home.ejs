@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+  <link rel='stylesheet' href='/stylesheets/home.css'>
+</head>
+<body>
+  <div class="container">
+    <h1>HOME</h1>
+    <% for (var i = 0; i < imgs.length; i++) { %>
+      <img src="<%= imgs[i] %>" alt="Image <%= i + 1 %>">
+    <% } %>
+  </div>
+</body>
+</html>

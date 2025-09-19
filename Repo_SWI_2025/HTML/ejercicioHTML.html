@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio HTML: Carlos Moragón</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Ejercicio html para Sistemas Web 1">
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Carlos Moragon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type=" image/x-icon" href="https://play-lh.googleusercontent.com/NKObO7yqBUEV-FPrtQtRzVFHd_XUE1VnD0q5_RFRmmEyOrskt2-8KNp5zNaDRN-q1g=w240-h480-rw">
+
+        <style>
+            
+            #imagen{
+                width: 300px;
+                height: 400px;
+                background-image: url('https://play-lh.googleusercontent.com/NKObO7yqBUEV-FPrtQtRzVFHd_XUE1VnD0q5_RFRmmEyOrskt2-8KNp5zNaDRN-q1g=w240-h480-rw');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.3s ease;
+            }
+
+            #imagen:hover{
+                background-image: url('https://ih1.redbubble.net/image.5180322596.1776/flat,750x,075,f-pad,750x1000,f8f8f8.jpg');
+            }
+
+            header{
+                background-color:aqua;
+                
+            }
+
+            header h1{
+                text-align: center;
+            }
+
+            h2.title:hover{
+                background-color: orange;
+                width:fit-content;
+                text-transform:uppercase;
+            }    
+
+            #I img{
+                border-style: inset;
+                border-radius: 30px;
+            }
+            div h1{
+                color: red;
+            }
+
+            div h3{
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+                font-size: 36px;
+                font-weight: bold;
+            }
+            #formularioget{
+                background-color: beige;
+                width: 25%;
+            }
+            #formulariopost{
+                background-color:cadetblue;
+                width: 25%;
+            }
+
+            #T{
+                width: fit-content;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            th, td {
+                border: 1px solid black; 
+                padding: 10px; 
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:hover {
+                background-color:khaki;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header><h1 class="title">Ejercicio HTML: Carlos Moragón</h1></header>
+        <div id="h">
+            <h1>Etiqueta h1</h1>
+            <h2>Etiqueta h2</h2>
+            <h3>Etiqueta h3</h3>
+            <h4>Etiqueta h4</h4>
+            <h5>Etiqueta h5</h5>
+            <h6>Etiqueta h6</h6>
+            <p>Esto es un parrafo</p>
+        </div>
+        <br>
+        <div id="p">
+            <p>
+                <span id="sp">
+                    <b>Negrita</b>
+                    <i>Cursiva</i>
+                    <em>Enfasis</em>
+                </span>
+                <strong>Más enfasis</strong>
+                <small>tamaño pequeño</small>
+                <u>subrayado</u>
+    
+            </p>    
+        </div>
+        <br>
+        
+        <h2 class="title">Lista sin orden:</h2>
+        <div id="L">
+            <ul>
+                <li>Carlos</li>
+                <li>Orianna</li>
+                <li>Paloma</li>
+            </ul>
+        </div>
+        <br>
+        <h2 class="title">Lista con orden:</h2>
+        <div id="LO">
+            <dl>
+                <dt>Carlos</dt>
+                <dd>Moragón</dd>
+                <dt>Orianna</dt>
+                <dd>Milone</dd>
+                <dt>Paloma</dt>
+                <dd>Pérez de Madrid</dd>
+            </dl>
+        </div>
+        <br>
+        
+        <h2 class="title">Imagen que cambia (Pon el cursor encima):</h2>
+        <div id="imagen"></div>
+        <br>
+        <h2 class="title">Imagen:</h2>
+        <div id="I">
+            <img src="https://play-lh.googleusercontent.com/NKObO7yqBUEV-FPrtQtRzVFHd_XUE1VnD0q5_RFRmmEyOrskt2-8KNp5zNaDRN-q1g=w240-h480-rw" alt="Imagen del CEU" width="25%">
+        </div>
+        <br>
+        
+        <h2 class="title">Tabla:</h2>
+        <div id="T">
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Carlos</td>
+                    <td>Moragón</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Orianna</td>
+                    <td>Milone</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Paloma</td>
+                    <td>Pérez de Madrid</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h2 class="title">Etiquetas <b>a</b></h2>
+        <div id="A">
+            <a href="https://intranet.ceu.es/es-es/Paginas/inicio.aspx">Página web del CEU</a>
+        </div>
+        <br><br>
+        <div id="formularioget">
+            <h2 class="title">Formulario GET:</h2>
+            <form id="form" action="/ejercicioHTML.html" method="get">
+                <label>Nombre: <input type="text" name="fname"></label><br>
+                <label for="apellido">Apellido: </label>
+                    <input type="text" name="lname" id="apellido"><br>
+                <label for="cv">Sube tu CV:</label>
+                    <input type="file" name="file" id="cv"><br>
+                <button form="form">ENVIAR</button>
+            </form>
+        </div>
+        <br>
+        <div id="formulariopost">
+            <h2 class="title">Formulario POST:</h2>
+            <form id="form" action="/ejercicioHTML.html" method="post">
+                <label>Nombre: <input type="text" name="fname"></label><br>
+                <label for="apellido">Apellido: </label>
+                    <input type="text" name="lname" id="apellido"><br>
+                <label for="cv">Sube tu CV:</label>
+                    <input type="file" name="file" id="cv"><br>
+                <button form="form">ENVIAR</button>
+            </form>
+        </div>
+    </body>
+</html>

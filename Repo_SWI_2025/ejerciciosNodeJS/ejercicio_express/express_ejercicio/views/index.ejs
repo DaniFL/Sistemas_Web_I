@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>INDEX</title>
+  <link rel='stylesheet' href='/stylesheets/home.css'>
+</head>
+<body>
+  <div class="container">
+    <h1>INDEX</h1>
+    <button onclick="window.location.href='/login'">LogIn</button>
+    <% for (var i = 0; i < imgs.length; i++) { %>
+      <img src="<%= imgs[i] %>" alt="Image <%= i + 1 %>">
+    <% } %>
+  </div>
+</body>
+</html>

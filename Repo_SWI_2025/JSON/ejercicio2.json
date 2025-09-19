@@ -1,0 +1,28 @@
+[
+    {
+        "nombre": "Spider-Man: No Way Home",
+        "director": "Jon Watts",
+        "actores": ["Tom Holland", "Zendaya"],
+        "salas": [
+            {"17": {
+                "horas": ["17:00", "20:15"]
+            }},
+            {"20": {
+                "horas": ["18:00","21:15"]
+            }}
+        ]
+    },
+    {
+        "nombre": "The Matrix Resurrection",
+        "director": "Lana Wachowski",
+        "actores": ["Keanu Reeves", "Carrie-Anne Moss"],
+        "salas": [
+            {"5": {
+                "horas": ["19:15"]
+            }},
+            {"22": {
+                "horas": ["22:30"]
+            }}
+        ]
+    }
+]
