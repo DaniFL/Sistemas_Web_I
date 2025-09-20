@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartelera</title>
+</head>
+
+<body>
+    <h1>Cartelera de Cine</h1>
+
+    <% peliculas.forEach(function(pelicula) { %>
+        <div style="margin-bottom: 30px;">
+            <h2>
+                <%= pelicula.titulo %>
+            </h2>
+            <p><strong>Director:</strong>
+                <%= pelicula.director %>
+            </p>
+            <p><strong>Actores:</strong>
+                <%= pelicula.Actores.join(", ") %>
+      </p>
+      
+      <h3>Programación:</h3>
+      <ul>
+        <% pelicula.programación.forEach(function(prog) { %>
+          <li>
+            Sala <%= prog.sala %> - Inicio: <%= prog.hora_inicio %>
+            <% if (prog.hora_fin) { %>
+              - Fin: <%= prog.hora_fin %>
+            <% } %>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  <% }) %>
+</body>
+</html>
